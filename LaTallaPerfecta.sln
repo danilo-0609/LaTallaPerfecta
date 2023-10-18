@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{48FD8643-976D-4821-B571-A7D160E73A2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{C2922AAA-CEE7-47AF-876E-1F9733C345EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{9ABC5FC8-7BFE-4CAB-928D-6E03EFF4E99F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{6ED919C6-442B-4DFE-9546-00D50EE6E13C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{B4F854BC-C440-4663-AA6C-6C641785180C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{C6AF5E1F-1808-44B5-9FEF-F9356EA5F745}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaTallaPerfecta.API", "LaTallaPerfecta.API\LaTallaPerfecta.API.csproj", "{6C363263-19F6-488C-85D6-1FA033FC6C28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C363263-19F6-488C-85D6-1FA033FC6C28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C363263-19F6-488C-85D6-1FA033FC6C28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C363263-19F6-488C-85D6-1FA033FC6C28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C363263-19F6-488C-85D6-1FA033FC6C28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C2922AAA-CEE7-47AF-876E-1F9733C345EC} = {48FD8643-976D-4821-B571-A7D160E73A2A}
+		{9ABC5FC8-7BFE-4CAB-928D-6E03EFF4E99F} = {48FD8643-976D-4821-B571-A7D160E73A2A}
+		{6ED919C6-442B-4DFE-9546-00D50EE6E13C} = {48FD8643-976D-4821-B571-A7D160E73A2A}
+		{B4F854BC-C440-4663-AA6C-6C641785180C} = {6ED919C6-442B-4DFE-9546-00D50EE6E13C}
+		{C6AF5E1F-1808-44B5-9FEF-F9356EA5F745} = {6ED919C6-442B-4DFE-9546-00D50EE6E13C}
+		{6C363263-19F6-488C-85D6-1FA033FC6C28} = {C2922AAA-CEE7-47AF-876E-1F9733C345EC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5AA182BC-1E68-47C8-B486-5EAEB555A4E2}
+	EndGlobalSection
+EndGlobal
