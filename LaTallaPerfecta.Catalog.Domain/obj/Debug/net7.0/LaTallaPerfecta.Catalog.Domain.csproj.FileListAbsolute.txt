@@ -1,0 +1,5 @@
+C:\Users\USUARIO\source\repos\LaTallaPerfecta\LaTallaPerfecta.Catalog.Domain\obj\Debug\net7.0\LaTallaPerfecta.Catalog.Domain.csproj.AssemblyReference.cache
+C:\Users\USUARIO\source\repos\LaTallaPerfecta\LaTallaPerfecta.Catalog.Domain\obj\Debug\net7.0\LaTallaPerfecta.Catalog.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USUARIO\source\repos\LaTallaPerfecta\LaTallaPerfecta.Catalog.Domain\obj\Debug\net7.0\LaTallaPerfecta.Catalog.Domain.AssemblyInfoInputs.cache
+C:\Users\USUARIO\source\repos\LaTallaPerfecta\LaTallaPerfecta.Catalog.Domain\obj\Debug\net7.0\LaTallaPerfecta.Catalog.Domain.AssemblyInfo.cs
+C:\Users\USUARIO\source\repos\LaTallaPerfecta\LaTallaPerfecta.Catalog.Domain\obj\Debug\net7.0\LaTallaPerfecta.Catalog.Domain.csproj.CoreCompileInputs.cache
