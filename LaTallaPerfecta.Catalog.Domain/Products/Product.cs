@@ -1,5 +1,6 @@
 ﻿using ErrorOr;
 using LaTallaPerfecta.BuildingBlocks.Domain;
+using LaTallaPerfecta.Catalog.Domain.Products.Events;
 using LaTallaPerfecta.Catalog.Domain.Products.ValueObjects;
 using LaTallaPerfecta.Catalog.Domain.ProductsType;
 using Microsoft.AspNetCore.Http;
@@ -8,9 +9,11 @@ namespace LaTallaPerfecta.Catalog.Domain.Products;
 
 public sealed class Product : AggregateRoot<ProductId, Ulid>
 {
+    //public UserId OwnerId { get; private set; }
+    
     public new Ulid Id { get; private set; }
 
-    public Name Name { get; private set; }
+    public ProductName Name { get; private set; }
 
     public Price Price { get; private set; }
 
@@ -41,7 +44,7 @@ public sealed class Product : AggregateRoot<ProductId, Ulid>
                                           string size = "",
                                           string color = "")
     {
-        var name = Name.Create(nameValue);
+        var name = ProductName.Create(nameValue);
         var price = Price.Create(priceValue);
         var image = Image.Create(imageUrlValue, imageValue);
         var description = Description.Create(descriptionValue);
@@ -53,19 +56,23 @@ public sealed class Product : AggregateRoot<ProductId, Ulid>
         valueObjectsCheck.Add(image);
         valueObjectsCheck.Add(description);
 
-        bool thereAreErrors = valueObjectsCheck.Any(valueObject => valueObject.IsError);
+        bool thereAreErrors = valueObjectsCheck
+            .Any(valueObject => valueObject.IsError);
 
         if (thereAreErrors)
         {
-            var errors = valueObjectsCheck.Select(valueObject => valueObject.Errors!
-            .First());
+            var errors = valueObjectsCheck
+                .Select(valueObject => valueObject.Errors!
+                .First());
 
             var firstError = errors.First();
 
             return firstError;
         }
 
-        return new Product(ProductId.CreateUnique(), 
+        var productId = ProductId.CreateUnique();
+
+        var product = new Product(productId, 
             name.Value, 
             price.Value, 
             description.Value, 
@@ -75,10 +82,77 @@ public sealed class Product : AggregateRoot<ProductId, Ulid>
             productType, 
             image.Value, 
             inStock);
+
+        product.AddDomainEvent(new ProductCreatedEvent(productId));
+
+        return product;
+    }
+
+    public static ErrorOr<Product> Update(Ulid id,
+                                          string nameValue,
+                                          decimal priceValue,
+                                          ProductType productType,
+                                          string imageUrlValue,
+                                          IFormFile imageValue,
+                                          int inStock,
+                                          string descriptionValue = "",
+                                          string brand = "",
+                                          string size = "",
+                                          string color = "")
+    {
+        var name = ProductName.Create(nameValue);
+        var price = Price.Create(priceValue);
+        var image = Image.Create(imageUrlValue, imageValue);
+        var description = Description.Create(descriptionValue);
+
+        List<IErrorOr> valueObjectsCheck = new();
+
+        valueObjectsCheck.Add(name);
+        valueObjectsCheck.Add(price);
+        valueObjectsCheck.Add(image);
+        valueObjectsCheck.Add(description);
+
+        bool thereAreErrors = valueObjectsCheck
+            .Any(valueObject => valueObject.IsError);
+
+        if (thereAreErrors)
+        {
+            var errors = valueObjectsCheck
+                .Select(valueObject => valueObject.Errors!
+                .First());
+
+            var firstError = errors.First();
+
+            return firstError;
+        }
+
+        var productId = ProductId.Create(id);
+        
+        var product = new Product(productId,
+                name.Value,
+                price.Value,
+                description.Value,
+                brand,
+                size,
+                color,
+                productType,
+                image.Value,
+                inStock);
+
+        product.AddDomainEvent(new ProductUpdatedEvent(productId));
+
+        return product;
+    }
+
+    public static void Expire(ProductId productId, Product product)
+    {
+        ProductExpiredEvent productExpiredEvent = new(productId);
+
+        product.AddDomainEvent(productExpiredEvent);
     }
 
     private Product(ProductId id, 
-                    Name name, 
+                    ProductName name, 
                     Price price, 
                     Description description, 
                     string brand,
@@ -102,6 +176,7 @@ public sealed class Product : AggregateRoot<ProductId, Ulid>
         IsActive = true;
     }
 
+    
     public sealed class Builder
     {
         private string _name { get; }
@@ -151,6 +226,12 @@ public sealed class Product : AggregateRoot<ProductId, Ulid>
         public Builder WithColor(string color)
         {
             _color = color;
+            return this;
+        }
+
+        public Builder WithBrand(string brand)
+        {
+            _brand = brand;
             return this;
         }
 

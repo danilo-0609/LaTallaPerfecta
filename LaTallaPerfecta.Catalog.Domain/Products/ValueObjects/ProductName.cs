@@ -6,11 +6,11 @@ using MediatR;
 
 namespace LaTallaPerfecta.Catalog.Domain.Products.ValueObjects;
 
-public sealed record Name : ValueObject
+public sealed record ProductName : ValueObject
 {
     public string Value { get; private set; }
     
-    public static ErrorOr<Name> Create(string name)
+    public static ErrorOr<ProductName> Create(string name)
     {
         var checkRules = CheckRules(name);
 
@@ -19,7 +19,7 @@ public sealed record Name : ValueObject
             return checkRules.FirstError;
         }
 
-        return new Name(name);
+        return new ProductName(name);
     }
 
     private static ErrorOr<Unit> CheckRules(string name)
@@ -28,20 +28,20 @@ public sealed record Name : ValueObject
 
         if (nameLengthCantBeOver250LettersRule.IsBroken())
         {
-            return Errors.Name.NameLengthOver250Letters(nameLengthCantBeOver250LettersRule.Message);
+            return ProductErrors.Name.NameLengthOver250Letters(nameLengthCantBeOver250LettersRule.Message);
         }
 
         NameLengthCannotBeLessThan10Letters nameLengthCannotBeLessThan10LettersRule = new(name);
 
         if (nameLengthCannotBeLessThan10LettersRule.IsBroken())
         {
-            return Errors.Name.NameLengthLessThan10WordsLetters(nameLengthCannotBeLessThan10LettersRule.Message);
+            return ProductErrors.Name.NameLengthLessThan10WordsLetters(nameLengthCannotBeLessThan10LettersRule.Message);
         }
 
         return Unit.Value;
     }
 
-    private Name(string value)
+    private ProductName(string value)
     {
         Value = value;
     }

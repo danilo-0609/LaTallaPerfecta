@@ -1,7 +1,8 @@
 ﻿namespace LaTallaPerfecta.BuildingBlocks.Domain;
 
-public abstract class Entity<TId> : IEquatable<Entity<TId>>, IHasDomainEvents
-    where TId : EntityId<TId> 
+public abstract class Entity<TId, TIdType> : IEquatable<Entity<TId, TIdType>>, IHasDomainEvents
+    where TId : EntityId<TIdType>
+    where TIdType : notnull
 {
     private readonly List<IDomainEvent> _domainEvents = new List<IDomainEvent>();
 
@@ -16,15 +17,15 @@ public abstract class Entity<TId> : IEquatable<Entity<TId>>, IHasDomainEvents
 
     public override bool Equals(object? obj)
     {
-        return obj is Entity<TId> entity && Id.Equals(entity.Id);
+        return obj is Entity<TId, TIdType> entity && Id.Equals(entity.Id);
     }
 
-    public static bool operator ==(Entity<TId> left, Entity<TId> right)
+    public static bool operator ==(Entity<TId, TIdType> left, Entity<TId, TIdType> right)
     {
         return Equals(left, right);
     }
 
-    public static bool operator !=(Entity<TId> left, Entity<TId> right)
+    public static bool operator !=(Entity<TId, TIdType> left, Entity<TId, TIdType> right)
     {
         return !Equals(left, right);
     }
@@ -34,14 +35,14 @@ public abstract class Entity<TId> : IEquatable<Entity<TId>>, IHasDomainEvents
         return Id.GetHashCode();
     }
 
-    public void AddDomainEvent(IDomainEvent domainEvent)
+    protected void AddDomainEvent(IDomainEvent domainEvent)
     {
         _domainEvents.Add(domainEvent);
     }
 
-    public void ClearDomainEvent() => _domainEvents.Clear();
+    public void ClearDomainEvent() => _domainEvents?.Clear();
 
-    public bool Equals(Entity<TId>? other)
+    public bool Equals(Entity<TId, TIdType>? other)
     {
         return Equals((object?)other);
     }

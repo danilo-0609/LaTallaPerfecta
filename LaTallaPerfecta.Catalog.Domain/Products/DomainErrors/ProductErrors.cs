@@ -2,7 +2,7 @@
 
 namespace LaTallaPerfecta.Catalog.Domain.Products.DomainErrors;
 
-public sealed class Errors
+public sealed class ProductErrors
 {
     public sealed class Products
     {

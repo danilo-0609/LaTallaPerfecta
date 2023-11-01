@@ -17,4 +17,10 @@
     <ProjectReference Include="..\LaTallaPerfecta.BuildingBlocks.Domain\LaTallaPerfecta.BuildingBlocks.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Brands\" />
+    <Folder Include="ProductFeedback\" />
+    <Folder Include="ProductsComments\" />
+  </ItemGroup>
+
 </Project>

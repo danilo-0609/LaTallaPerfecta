@@ -32,14 +32,14 @@ public sealed record Image : ValueObject
 
         if (imageFormatRule.IsBroken())
         {
-            return Errors.Images.InvalidFormat(imageFormatRule.Message);
+            return ProductErrors.Images.InvalidFormat(imageFormatRule.Message);
         }
 
         ImageSizeMustBeLessThan10MbRule imageSizeRule = new(imageFile);
 
         if (imageSizeRule.IsBroken())
         {
-            return Errors.Images.ExcessiveSize(imageSizeRule.Message);
+            return ProductErrors.Images.ExcessiveSize(imageSizeRule.Message);
         }
 
         return Unit.Value;

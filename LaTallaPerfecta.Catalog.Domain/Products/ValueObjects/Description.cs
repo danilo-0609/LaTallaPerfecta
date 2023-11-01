@@ -30,7 +30,7 @@ public sealed record Description : ValueObject
     
         if (descriptionLengthOver5000LettersRule.IsBroken())
         {
-            return Errors
+            return ProductErrors
                 .Description
                 .DescriptionLengthOver5000Letters(descriptionLengthOver5000LettersRule.Message);
         }
@@ -42,4 +42,3 @@ public sealed record Description : ValueObject
     {
         Value = description;
     }
-}

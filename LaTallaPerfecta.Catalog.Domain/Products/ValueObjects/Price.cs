@@ -28,14 +28,14 @@ public sealed record Price : ValueObject
 
         if (priceEqualsToZeroRule.IsBroken())
         {
-            return Errors.Price.PriceEqualsToZero(priceEqualsToZeroRule.Message);
+            return ProductErrors.Price.PriceEqualsToZero(priceEqualsToZeroRule.Message);
         }
 
         PriceCannotBeOverExpensive priceOverExpensiveRule = new(price);
 
         if (priceOverExpensiveRule.IsBroken())
         {
-            return Errors.Price.PriceOverExpensive(priceOverExpensiveRule.Message);
+            return ProductErrors.Price.PriceOverExpensive(priceOverExpensiveRule.Message);
         }
 
         return Unit.Value;
