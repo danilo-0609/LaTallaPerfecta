@@ -13,6 +13,7 @@
   <ItemGroup>
     <Folder Include="Customers\" />
     <Folder Include="Basket\" />
+    <Folder Include="Devolutions\" />
     <Folder Include="Orders\" />
   </ItemGroup>
 

@@ -3,21 +3,22 @@ using LaTallaPerfecta.BuildingBlocks.Domain;
 using LaTallaPerfecta.Catalog.Domain.Products.Events;
 using LaTallaPerfecta.Catalog.Domain.Products.ValueObjects;
 using LaTallaPerfecta.Catalog.Domain.ProductsType;
+using LaTallaPerfecta.Catalog.Domain.Sellers;
 using Microsoft.AspNetCore.Http;
 
 namespace LaTallaPerfecta.Catalog.Domain.Products;
 
 public sealed class Product : AggregateRoot<ProductId, Ulid>
 {
-    //public UserId OwnerId { get; private set; }
-    
     public new Ulid Id { get; private set; }
+
+    public SellerId SellerId { get; private set; }
 
     public ProductName Name { get; private set; }
 
     public Price Price { get; private set; }
 
-    public Description Description { get; private set; } 
+    public Description Description { get; private set; }
 
     public string Brand { get; private set; } = string.Empty;
 
@@ -33,7 +34,16 @@ public sealed class Product : AggregateRoot<ProductId, Ulid>
 
     public bool IsActive { get; private set; }
 
-    public static ErrorOr<Product> Create(string nameValue,
+    //public List<ProductCommentId> CommentsId 
+
+    //public Brand Brand 
+
+    //public List<ProductFeedbackId> FeedbackId 
+
+    //public Rating Rating
+
+    public static ErrorOr<Product> Create(Ulid sellerIdValue,
+                                          string nameValue,
                                           decimal priceValue,
                                           ProductType productType,
                                           string imageUrlValue,
@@ -71,8 +81,10 @@ public sealed class Product : AggregateRoot<ProductId, Ulid>
         }
 
         var productId = ProductId.CreateUnique();
+        var sellerId = SellerId.Create(sellerIdValue);
 
-        var product = new Product(productId, 
+        var product = new Product(productId,
+            sellerId,
             name.Value, 
             price.Value, 
             description.Value, 
@@ -89,6 +101,7 @@ public sealed class Product : AggregateRoot<ProductId, Ulid>
     }
 
     public static ErrorOr<Product> Update(Ulid id,
+                                          Ulid sellerIdValue,
                                           string nameValue,
                                           decimal priceValue,
                                           ProductType productType,
@@ -127,8 +140,10 @@ public sealed class Product : AggregateRoot<ProductId, Ulid>
         }
 
         var productId = ProductId.Create(id);
+        var sellerId = SellerId.Create(sellerIdValue);
         
         var product = new Product(productId,
+                sellerId,
                 name.Value,
                 price.Value,
                 description.Value,
@@ -151,18 +166,20 @@ public sealed class Product : AggregateRoot<ProductId, Ulid>
         product.AddDomainEvent(productExpiredEvent);
     }
 
-    private Product(ProductId id, 
-                    ProductName name, 
-                    Price price, 
-                    Description description, 
-                    string brand,
-                    string size, 
-                    string color, 
-                    ProductType productType, 
-                    Image image, 
-                    int inStock)
-        : base(id)
+    private Product(ProductId id,
+        SellerId sellerId,
+        ProductName name, 
+        Price price, 
+        Description description,
+        string brand,
+        string size, 
+        string color, 
+        ProductType productType, 
+        Image image, 
+        int inStock)
+            : base(id)
     {
+        SellerId = sellerId;
         Name = name;
         Price = price;
         Description = description;
@@ -179,6 +196,8 @@ public sealed class Product : AggregateRoot<ProductId, Ulid>
     
     public sealed class Builder
     {
+        private Ulid _sellerId { get; }
+
         private string _name { get; }
 
         private decimal _price { get; }
@@ -200,7 +219,8 @@ public sealed class Product : AggregateRoot<ProductId, Ulid>
         private string _brand { get; set; } = string.Empty;
 
 
-        public Builder(string name, 
+        public Builder(Ulid sellerId,
+                       string name, 
                        decimal price, 
                        string size,
                        string imageUrl,
@@ -208,6 +228,7 @@ public sealed class Product : AggregateRoot<ProductId, Ulid>
                        int inStock,
                        ProductType productType)
         {
+            _sellerId = sellerId;
             _name = name;
             _price = price;
             _size = size;
@@ -237,15 +258,16 @@ public sealed class Product : AggregateRoot<ProductId, Ulid>
 
         public ErrorOr<Product> Build()
         {
-            var product = Product.Create(_name, 
-                _price, 
-                _productType, 
-                _imageUrl, 
-                _imageFile, 
-                _inStock, 
-                _description, 
-                _brand, 
-                _size, 
+            var product = Product.Create(_sellerId,
+                _name,
+                _price,
+                _productType,
+                _imageUrl,
+                _imageFile,
+                _inStock,
+                _description,
+                _brand,
+                _size,
                 _color);
 
             if (product.IsError)
