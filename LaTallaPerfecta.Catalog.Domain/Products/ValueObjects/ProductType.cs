@@ -1,6 +1,6 @@
 ﻿using LaTallaPerfecta.BuildingBlocks.Domain;
 
-namespace LaTallaPerfecta.Catalog.Domain.ProductsType;
+namespace LaTallaPerfecta.Catalog.Domain.Products.ValueObjects;
 
 public sealed record ProductType : ValueObject
 {
@@ -19,11 +19,11 @@ public sealed record ProductType : ValueObject
     public static ProductType Shoes => new ProductType(nameof(Shoes));
 
     public static ProductType Jacket => new ProductType(nameof(Jacket));
-    
+
     public static ProductType Coat => new ProductType(nameof(Coat));
 
     public static ProductType Dress => new ProductType(nameof(Dress));
-    
+
     public static ProductType Underwear => new ProductType(nameof(Underwear));
 
     public static ProductType Accesories => new ProductType(nameof(Accesories));

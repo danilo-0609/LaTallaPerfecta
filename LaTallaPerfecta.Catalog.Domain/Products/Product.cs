@@ -1,8 +1,9 @@
 ﻿using ErrorOr;
 using LaTallaPerfecta.BuildingBlocks.Domain;
+using LaTallaPerfecta.Catalog.Domain.Brands;
 using LaTallaPerfecta.Catalog.Domain.Products.Events;
 using LaTallaPerfecta.Catalog.Domain.Products.ValueObjects;
-using LaTallaPerfecta.Catalog.Domain.ProductsType;
+using LaTallaPerfecta.Catalog.Domain.ProductsComments;
 using LaTallaPerfecta.Catalog.Domain.Sellers;
 using Microsoft.AspNetCore.Http;
 
@@ -10,6 +11,8 @@ namespace LaTallaPerfecta.Catalog.Domain.Products;
 
 public sealed class Product : AggregateRoot<ProductId, Ulid>
 {
+    private readonly List<ProductCommentId> _commentIds = new();
+
     public new Ulid Id { get; private set; }
 
     public SellerId SellerId { get; private set; }
@@ -20,7 +23,7 @@ public sealed class Product : AggregateRoot<ProductId, Ulid>
 
     public Description Description { get; private set; }
 
-    public string Brand { get; private set; } = string.Empty;
+    public BrandId BrandId { get; private set; } = string.Empty; 
 
     public string Size { get; private set; } = string.Empty;
 
@@ -34,13 +37,13 @@ public sealed class Product : AggregateRoot<ProductId, Ulid>
 
     public bool IsActive { get; private set; }
 
-    //public List<ProductCommentId> CommentsId 
+    public IReadOnlyList<ProductCommentId> CommentsId => _commentIds.AsReadOnly();
 
-    //public Brand Brand 
+    //public List<ProductRatingId> RatingId 
 
-    //public List<ProductFeedbackId> FeedbackId 
+    // public DateTime CreatedDateTime { get; private set; }
 
-    //public Rating Rating
+    // public DateTime UpdatedDateTime { get; private set; }
 
     public static ErrorOr<Product> Create(Ulid sellerIdValue,
                                           string nameValue,
@@ -183,7 +186,7 @@ public sealed class Product : AggregateRoot<ProductId, Ulid>
         Name = name;
         Price = price;
         Description = description;
-        Brand = brand;
+        BrandId = brand;
         Size = size;
         Color = color;
         ProductType = productType;

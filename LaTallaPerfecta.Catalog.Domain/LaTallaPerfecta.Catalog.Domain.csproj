@@ -18,9 +18,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Brands\" />
-    <Folder Include="ProductFeedback\" />
-    <Folder Include="ProductsComments\" />
+    <Folder Include="Brands\Errors\" />
+    <Folder Include="Brands\Events\" />
+    <Folder Include="Brands\Rules\" />
+    <Folder Include="Brands\ValueObjects\" />
+    <Folder Include="ProductRating\" />
   </ItemGroup>
 
 </Project>

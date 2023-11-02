@@ -31,6 +31,11 @@ public sealed class Seller : AggregateRoot<SellerId, Ulid>
 
     //public IReadonlylist<ProductId> ProductsId 
 
+    // public DateTime CreatedDateTime { get; private set; }
+
+    // public DateTime UpdatedDateTime { get; private set; }
+
+
     private Seller(SellerId sellerId, 
         string address, 
         SellerName sellerName, 
@@ -99,7 +104,49 @@ public sealed class Seller : AggregateRoot<SellerId, Ulid>
 
         return seller;
     }
-    //public static ErrorOr<Seller> Update();
+
+    public static ErrorOr<Seller> Update(Ulid sellerId,
+       string address,
+       string email,
+       string firstName,
+       string lastName = "",
+       string profilePhotoUrl = "",
+       int amountOfSales = 0,
+       bool isActive = true,
+       string description = "",
+       string webSiteUrl = "",
+       string instagramUrl = "",
+       string whatsappUrl = "",
+       string tiktokUrl = "")
+    {
+        var sellerName = SellerName.Create($"{firstName} {lastName}");
+
+        if (sellerName.IsError)
+        {
+            return sellerName.FirstError;
+        }
+
+        ContactInformation contactInformation = ContactInformation.Create(webSiteUrl,
+            instagramUrl,
+            whatsappUrl,
+            tiktokUrl);
+
+        var seller = new Seller(SellerId.Create(sellerId),
+            address,
+            sellerName.Value,
+            email,
+            contactInformation,
+            description,
+            isActive,
+            amountOfSales,
+            profilePhotoUrl,
+            firstName,
+            lastName);
+
+        seller.AddDomainEvent(new SellerUpdatedEvent(seller));
+
+        return seller;
+    }
 
     public sealed class Builder
     {
