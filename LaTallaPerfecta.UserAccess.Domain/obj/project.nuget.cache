@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "NMQn228MTZPSrCdtPEgZgYlwZI0KQBku3sideSMLGSin8G2+N1EGYOW8G6+KP5q81mSrCGjiKcYXtasiE96PvQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\USUARIO\\source\\repos\\LaTallaPerfecta\\LaTallaPerfecta.UserAccess.Domain\\LaTallaPerfecta.UserAccess.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USUARIO\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
+    "C:\\Users\\USUARIO\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\USUARIO\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
