@@ -1,0 +1,15 @@
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Payments.Domain\bin\Debug\net7.0\LaTallaPerfecta.Payments.Domain.deps.json
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Payments.Domain\bin\Debug\net7.0\LaTallaPerfecta.Payments.Domain.dll
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Payments.Domain\bin\Debug\net7.0\LaTallaPerfecta.Payments.Domain.pdb
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Payments.Domain\bin\Debug\net7.0\LaTallaPerfecta.BuildingBlocks.Domain.dll
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Payments.Domain\bin\Debug\net7.0\LaTallaPerfecta.BuildingBlocks.Domain.pdb
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Payments.Domain\obj\Debug\net7.0\LaTallaPerfecta.Payments.Domain.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Payments.Domain\obj\Debug\net7.0\LaTallaPerfecta.Payments.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Payments.Domain\obj\Debug\net7.0\LaTallaPerfecta.Payments.Domain.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Payments.Domain\obj\Debug\net7.0\LaTallaPerfecta.Payments.Domain.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Payments.Domain\obj\Debug\net7.0\LaTallaPerfecta.Payments.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Payments.Domain\obj\Debug\net7.0\LaTallaPerfecta.Payments.Domain.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Payments.Domain\obj\Debug\net7.0\LaTallaPerfecta.Payments.Domain.dll
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Payments.Domain\obj\Debug\net7.0\refint\LaTallaPerfecta.Payments.Domain.dll
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Payments.Domain\obj\Debug\net7.0\LaTallaPerfecta.Payments.Domain.pdb
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Payments.Domain\obj\Debug\net7.0\ref\LaTallaPerfecta.Payments.Domain.dll

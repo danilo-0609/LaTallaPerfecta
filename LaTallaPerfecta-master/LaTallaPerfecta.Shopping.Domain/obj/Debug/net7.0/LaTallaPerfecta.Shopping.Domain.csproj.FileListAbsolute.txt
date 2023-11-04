@@ -1,0 +1,15 @@
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Shopping.Domain\bin\Debug\net7.0\LaTallaPerfecta.Shopping.Domain.deps.json
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Shopping.Domain\bin\Debug\net7.0\LaTallaPerfecta.Shopping.Domain.dll
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Shopping.Domain\bin\Debug\net7.0\LaTallaPerfecta.Shopping.Domain.pdb
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Shopping.Domain\bin\Debug\net7.0\LaTallaPerfecta.BuildingBlocks.Domain.dll
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Shopping.Domain\bin\Debug\net7.0\LaTallaPerfecta.BuildingBlocks.Domain.pdb
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Shopping.Domain\obj\Debug\net7.0\LaTallaPerfecta.Shopping.Domain.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Shopping.Domain\obj\Debug\net7.0\LaTallaPerfecta.Shopping.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Shopping.Domain\obj\Debug\net7.0\LaTallaPerfecta.Shopping.Domain.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Shopping.Domain\obj\Debug\net7.0\LaTallaPerfecta.Shopping.Domain.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Shopping.Domain\obj\Debug\net7.0\LaTallaPerfecta.Shopping.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Shopping.Domain\obj\Debug\net7.0\LaTallaPerfecta.Shopping.Domain.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Shopping.Domain\obj\Debug\net7.0\LaTallaPerfecta.Shopping.Domain.dll
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Shopping.Domain\obj\Debug\net7.0\refint\LaTallaPerfecta.Shopping.Domain.dll
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Shopping.Domain\obj\Debug\net7.0\LaTallaPerfecta.Shopping.Domain.pdb
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Shopping.Domain\obj\Debug\net7.0\ref\LaTallaPerfecta.Shopping.Domain.dll

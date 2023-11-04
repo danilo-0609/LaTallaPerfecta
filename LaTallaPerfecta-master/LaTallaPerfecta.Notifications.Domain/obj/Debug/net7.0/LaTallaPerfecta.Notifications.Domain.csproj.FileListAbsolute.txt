@@ -1,0 +1,11 @@
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Notifications.Domain\bin\Debug\net7.0\LaTallaPerfecta.Notifications.Domain.deps.json
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Notifications.Domain\bin\Debug\net7.0\LaTallaPerfecta.Notifications.Domain.dll
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Notifications.Domain\bin\Debug\net7.0\LaTallaPerfecta.Notifications.Domain.pdb
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Notifications.Domain\obj\Debug\net7.0\LaTallaPerfecta.Notifications.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Notifications.Domain\obj\Debug\net7.0\LaTallaPerfecta.Notifications.Domain.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Notifications.Domain\obj\Debug\net7.0\LaTallaPerfecta.Notifications.Domain.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Notifications.Domain\obj\Debug\net7.0\LaTallaPerfecta.Notifications.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Notifications.Domain\obj\Debug\net7.0\LaTallaPerfecta.Notifications.Domain.dll
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Notifications.Domain\obj\Debug\net7.0\refint\LaTallaPerfecta.Notifications.Domain.dll
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Notifications.Domain\obj\Debug\net7.0\LaTallaPerfecta.Notifications.Domain.pdb
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.Notifications.Domain\obj\Debug\net7.0\ref\LaTallaPerfecta.Notifications.Domain.dll

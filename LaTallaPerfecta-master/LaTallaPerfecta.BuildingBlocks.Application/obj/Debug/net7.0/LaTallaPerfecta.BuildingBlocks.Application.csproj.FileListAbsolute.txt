@@ -1,0 +1,15 @@
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.BuildingBlocks.Application\bin\Debug\net7.0\LaTallaPerfecta.BuildingBlocks.Application.deps.json
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.BuildingBlocks.Application\bin\Debug\net7.0\LaTallaPerfecta.BuildingBlocks.Application.dll
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.BuildingBlocks.Application\bin\Debug\net7.0\LaTallaPerfecta.BuildingBlocks.Application.pdb
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.BuildingBlocks.Application\bin\Debug\net7.0\LaTallaPerfecta.BuildingBlocks.Domain.dll
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.BuildingBlocks.Application\bin\Debug\net7.0\LaTallaPerfecta.BuildingBlocks.Domain.pdb
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.BuildingBlocks.Application\obj\Debug\net7.0\LaTallaPerfecta.BuildingBlocks.Application.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.BuildingBlocks.Application\obj\Debug\net7.0\LaTallaPerfecta.BuildingBlocks.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.BuildingBlocks.Application\obj\Debug\net7.0\LaTallaPerfecta.BuildingBlocks.Application.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.BuildingBlocks.Application\obj\Debug\net7.0\LaTallaPerfecta.BuildingBlocks.Application.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.BuildingBlocks.Application\obj\Debug\net7.0\LaTallaPerfecta.BuildingBlocks.Application.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.BuildingBlocks.Application\obj\Debug\net7.0\LaTallaPerfecta.BuildingBlocks.Application.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.BuildingBlocks.Application\obj\Debug\net7.0\LaTallaPerfecta.BuildingBlocks.Application.dll
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.BuildingBlocks.Application\obj\Debug\net7.0\refint\LaTallaPerfecta.BuildingBlocks.Application.dll
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.BuildingBlocks.Application\obj\Debug\net7.0\LaTallaPerfecta.BuildingBlocks.Application.pdb
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.BuildingBlocks.Application\obj\Debug\net7.0\ref\LaTallaPerfecta.BuildingBlocks.Application.dll

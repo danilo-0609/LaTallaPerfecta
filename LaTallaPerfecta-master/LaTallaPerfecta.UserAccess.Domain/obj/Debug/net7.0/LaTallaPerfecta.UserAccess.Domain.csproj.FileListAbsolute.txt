@@ -1,0 +1,15 @@
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.UserAccess.Domain\bin\Debug\net7.0\LaTallaPerfecta.UserAccess.Domain.deps.json
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.UserAccess.Domain\bin\Debug\net7.0\LaTallaPerfecta.UserAccess.Domain.dll
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.UserAccess.Domain\bin\Debug\net7.0\LaTallaPerfecta.UserAccess.Domain.pdb
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.UserAccess.Domain\bin\Debug\net7.0\LaTallaPerfecta.BuildingBlocks.Domain.dll
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.UserAccess.Domain\bin\Debug\net7.0\LaTallaPerfecta.BuildingBlocks.Domain.pdb
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.UserAccess.Domain\obj\Debug\net7.0\LaTallaPerfecta.UserAccess.Domain.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.UserAccess.Domain\obj\Debug\net7.0\LaTallaPerfecta.UserAccess.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.UserAccess.Domain\obj\Debug\net7.0\LaTallaPerfecta.UserAccess.Domain.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.UserAccess.Domain\obj\Debug\net7.0\LaTallaPerfecta.UserAccess.Domain.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.UserAccess.Domain\obj\Debug\net7.0\LaTallaPerfecta.UserAccess.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.UserAccess.Domain\obj\Debug\net7.0\LaTallaPerfecta.UserAccess.Domain.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.UserAccess.Domain\obj\Debug\net7.0\LaTallaPerfecta.UserAccess.Domain.dll
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.UserAccess.Domain\obj\Debug\net7.0\refint\LaTallaPerfecta.UserAccess.Domain.dll
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.UserAccess.Domain\obj\Debug\net7.0\LaTallaPerfecta.UserAccess.Domain.pdb
+C:\Users\Usuario\Desktop\Programación\LaTallaPerfecta-master\LaTallaPerfecta.UserAccess.Domain\obj\Debug\net7.0\ref\LaTallaPerfecta.UserAccess.Domain.dll
